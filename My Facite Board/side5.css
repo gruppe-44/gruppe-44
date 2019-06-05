@@ -1,0 +1,90 @@
+html, body{
+    height: 100%;
+    width: 100%;
+	margin: 0;
+    position: absolute;
+    background-color: #1B2035;
+    overflow: hidden;
+}
+
+.text{
+    position: relative;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #FFFCFC;
+    font-weight: 400;
+}
+
+#overskrift{
+    left: 4%;
+    top: 3%;
+    font-size: 60px;
+    margin: 1.5%;
+    padding: 0%;
+}
+
+#underskrift{
+    left: 6%;
+    top: 10%;
+    font-size: 35px;
+    margin: -1%;
+    padding: 0;
+}
+
+#backgroundBox{
+    position: absolute;
+    background-color: #2D2B2B;
+    width: 93.5%;
+    height: 76%;
+    border-radius: 1%;
+    margin: 3%;
+}
+
+#backButton{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #999797;
+    right: 3%;
+    bottom: 6%;
+    opacity: 0.8;
+}
+
+#arrow{
+    position: absolute;
+    height: 40%;
+    top: 29%;
+    left: 17%;
+    opacity: 0.8;
+}
+
+
+
+#proceedBox{
+    position: absolute;
+    height: 25%;
+    width: 11%;
+    bottom: 2%;
+    right: 10%;
+}
+
+#proceedText{
+    position: absolute;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #FFFCFC;
+    font-weight: 400;
+    font-size: 30px;
+    right: 10%;
+    bottom: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+

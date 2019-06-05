@@ -1,0 +1,32 @@
+html, body{
+    height: 100%;
+    width: 100%;
+	margin: 0;
+    position: absolute;
+    background-color: #1B2035;
+}
+
+#dashPic{
+    top: 0;
+    height: auto;
+}
+
+#backButton{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #999797;
+    left: 4%;
+    top: 1%;
+    opacity: 0.8;
+}
+
+#arrow{
+    position: absolute;
+    transform: rotate(180deg);
+    height: 40%;
+    top: 29%;
+    left: 17%;
+    opacity: 0.8;
+}
