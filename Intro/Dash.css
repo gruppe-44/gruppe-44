@@ -9,6 +9,9 @@ main{
     background-color: rgb(27,32,53);
 }
 
+
+/* Overhead */
+
 #welcome{
     position: absolute;
     font-family: Avenir Next;
@@ -25,6 +28,30 @@ main{
     left: 100px;
     top: 120px; 
 }
+
+.date-back{
+    position: absolute;
+    background-color: rgb(255,252,252);
+    border-radius: 10%; 
+}
+
+#number-back{
+    top: 140px;
+    left: 200px;
+    width: 66px;
+    height: 48px;
+}
+
+#month-back{
+    top: 140px;
+    left: 310px;
+    width: 86px;
+    height: 48px;
+}
+
+/* End Overhead*/
+
+/* Overview Board */
 
 #overview-board{
     position: absolute; 
@@ -117,7 +144,7 @@ main{
 }
 /* End Sina's button */
 
-
+/* End Overview Board */
 
 
 
