@@ -52,22 +52,77 @@ main{
 #my-cards{
     width: 614px;
     height: 274px;
-    bottom: 12px;
+    bottom: 13px;
     left: 13px;
 }
 
 #chat-box{
     width: 345px;
     height: 367px;
-    top: 12px;
+    top: 13px;
     left: 640px;   
 }
 
 #vote-box{
     width: 345px;
     height: 180px;
-    bottom: 12px;
+    bottom: 13px;
     left: 640px; 
 }
 
-#members-box{}
+#members-box{
+    width: 350px;
+    height: 367px;
+    top: 13px;
+    left: 1000px; 
+}
+
+/*Sina's button*/
+
+#backButton{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #999797;
+    right: 3%;
+    bottom: 10%;
+    opacity: 0.8;
+}
+
+#arrow{
+    position: absolute;
+    height: 40%;
+    top: 29%;
+    left: 17%;
+    opacity: 0.8;
+}
+
+#proceedBox{
+    position: absolute;
+    height: 25%;
+    width: 11%;
+    bottom: 5%;
+    right: 12%;
+}
+
+#proceedText{
+    position: absolute;
+    font-family: Avenir Next;
+    letter-spacing: 1.5px;
+    color: #FFFCFC;
+    font-weight: 400;
+    font-size: 30px;
+    bottom: 1%
+    
+}
+
+/* End Sina's button */
+
+
+
+
+
+
+
+
