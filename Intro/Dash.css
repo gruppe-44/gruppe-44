@@ -30,20 +30,23 @@ main{
     top: 13%;
 }
 
-.date-back{
+.dateBack{
     position: absolute;
     background-color: rgb(255,252,252);
     border-radius: 10%; 
+    font-family: Avenir Next;
+    font-size: 30px; 
+    text-align: center;
 }
 
-#number-back{
+#numberBack{
     top: 145px;
     left: 200px;
     width: 66px;
     height: 40px;
 }
 
-#month-back{
+#monthBack{
     top: 145px;
     left: 310px;
     width: 86px;
