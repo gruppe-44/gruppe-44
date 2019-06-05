@@ -1,0 +1,63 @@
+body{
+    margin:0px; 
+}
+
+main{
+    position: absolute;
+    width: 1440px; 
+    height: 900px; 
+    background-color: rgb(27,32,53);
+}
+
+#welcome{
+    position: absolute;
+    font-family: Avenir Next;
+    color: rgb(255,252,252);
+    font-size: 70px;
+    left: 100px;
+}
+
+#welcome-text{
+    position: absolute;
+    font-family: Avenir Next;
+    color: rgb(255,252,252);
+    font-size: 30px;
+    left: 100px;
+    top: 120px; 
+}
+
+#overview-board{
+    position: absolute; 
+    width: 1365px;
+    height: 586px; 
+    background-color: #1A1C22;
+    bottom: 100px;
+    left: 37.5px;
+    border-radius: 1%;
+}
+
+.widgets{
+    position:absolute; 
+    background-color: #1F2128;
+    border-radius: 1%; 
+}
+
+#progress-bar{
+    width: 614px;
+    height: 272px;
+    bottom: 301px;
+    left: 13px;
+}
+
+#my-cards{
+    width: 614px;
+    height: 254px;
+    bottom: 594px;
+    left: 13px;
+}
+
+#chat-box{}
+
+#vote-box{}
+
+#members-box{}
