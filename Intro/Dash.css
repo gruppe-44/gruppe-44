@@ -44,20 +44,30 @@ main{
 
 #progress-bar{
     width: 614px;
-    height: 272px;
+    height: 274px;
     bottom: 301px;
     left: 13px;
 }
 
 #my-cards{
     width: 614px;
-    height: 254px;
-    bottom: 594px;
+    height: 274px;
+    bottom: 12px;
     left: 13px;
 }
 
-#chat-box{}
+#chat-box{
+    width: 345px;
+    height: 367px;
+    top: 12px;
+    left: 640px;   
+}
 
-#vote-box{}
+#vote-box{
+    width: 345px;
+    height: 180px;
+    bottom: 12px;
+    left: 640px; 
+}
 
 #members-box{}
