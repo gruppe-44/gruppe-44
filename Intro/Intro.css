@@ -10,22 +10,16 @@ main{
 }
 
 #ball{
+    display:flex;
+    justify-content: center;
     position: absolute;
-    width: 26px;
-    height: 26px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     background-color: rgb(6,21,121);
     left: 40%;
     top: 30%;
-    animation-name: startBall; 
-    animation animation-duration: 4s;
-    animation-delay: 2s;
-}
-
-@keyframes startBall{
-    from {transform: scale3d(-3em, 1em);}
-    to{height: 300px; width: 300px;}
-}
+}    
 
 #hello{
     position: absolute;
