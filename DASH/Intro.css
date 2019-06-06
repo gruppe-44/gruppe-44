@@ -1,0 +1,37 @@
+body{
+    margin:0px; 
+}
+
+main{
+    position: relative; 
+    width: 1440px; 
+    height: 900px; 
+    background-color: rgb(27,32,53);
+}
+
+#ball{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: rgb(6,21,121);
+    left: 40%;
+    top: 30%;
+    animation-name: startBall; 
+    animation animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+@keyframes startBall{
+    from {transform: scale3d(-3em, 1em);}
+    to{height: 300px; width: 300px;}
+}
+
+#hello{
+    position: absolute;
+    color: rgb(255,252,252);
+    font-family: Avenir Next;
+    font-size: 50px; 
+    top: 80px;
+    left: 40px;
+}

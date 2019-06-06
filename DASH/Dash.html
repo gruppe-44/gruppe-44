@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="Stylesheet" type="text/css" href="Dash.css">
+    <link rel="Stylesheet" type="text/css" href="members.css">
+    <link rel="Stylesheet" type="text/css" href="shoutbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+         <script src="JavaScript.js"></script>
+         <script src="Dash.js"></script>   
+    <title>Dashboard</title>
+
+    <script>
+            var end = new Date('07/06/2019');
+            
+                var _second = 1000;
+                var _minute = _second * 60;
+                var _hour = _minute * 60;
+                var _day = _hour * 24;
+                var timer;
+            
+                function showRemaining() {
+                    var now = new Date();
+                    var distance = end - now;
+                    if (distance < 0) {
+            
+                        clearInterval(timer);
+                        document.getElementById('daysleft').innerHTML = 'EXPIRED!';
+            
+                        return;
+                    }
+                    var days = Math.floor(distance / _day);
+                    var hours = Math.floor((distance % _day) / _hour);
+                    var minutes = Math.floor((distance % _hour) / _minute);
+                    var seconds = Math.floor((distance % _minute) / _second);
+            
+                    document.getElementById('daysleft').innerHTML = days;
+                }
+            
+                timer = setInterval(showRemaining, 1000);
+            </script>
+    </head>
+    <body>
+        <main>
+            
+            <!--Overhead-->
+            
+            <h2 id="welcome">Welcome, [User].</h2>
+            <p id="welcome-text">It's the<span style="opacity:0;">_..__ </span>of
+                <span style="opacity:0;"> _____</span>, this is your daily schedule.</p>
+            <div class="dateBack" id="numberBack"></div>
+            <div class="dateBack" id="monthBack"></div>
+            
+            
+            <!--End Overhead-->
+            
+            <!--Overview Board-->
+            
+            <div id="overview-board">
+            <div class="widgets" id="progress-bar">
+                    <div class="due-field">
+                            <h1 class="projectdue-text">Project "Eksamen PRO103" is due in</h1>
+
+                            <div class="progresss-bar">
+                                <div class="progresss" style="width:90%; margin-left:auto; margin-right:auto;">
+                                    <div id="bar" style="border-right: ; background-image: linear-gradient(to right, green , red); height: 20px; width: 0%"></div>
+                                    </div>
+                                    <div id="countdown"></div>
+                                    <script type="text/javascript">
+                                        function getDaysRemaining(endtime){
+                                          var t = Date.parse(endtime) - Date.parse(new Date());
+                                          var days = Math.floor( t/(1000*60*60*24) );
+                                          return days;
+                                        }
+                                        function getTimeSince(starttime){
+                                          var t = Date.parse(new Date()) - Date.parse(starttime);
+                                          var days = Math.floor( t/(1000*60*60*24) );
+                                          return {
+                                            days
+                                          };
+                                        }
+                                        function humaniseSince(days) {
+                                          var text = days.toString();
+                                          return text;
+                                        }
+                                        function getPercentage(starttime, endtime) {
+                                          startDate = Date.parse(starttime);
+                                          endDate = Date.parse(endtime);
+                                          diff = endDate - startDate;
+                                          totalDays = Math.floor( diff/(1000*60*60*24) );
+                                          var progressDiff = Date.parse(new Date()) - Date.parse(starttime);
+                                          var progressDays = Math.floor( progressDiff/(1000*60*60*24) );
+                                          totalDaysLeft = progressDays/totalDays;
+                                          decimalToPercent = (1-totalDaysLeft);
+                                          percentageDays = Math.floor(decimalToPercent * 100);
+                                          percentagemin = (100-percentageDays)
+                                          percentage = (0+percentagemin)
+                                          return percentage
+                                        }
+                                        var startDate = '2019-05-02';
+                                        var endDate = '2019-07-06';
+                                        var timeGone = getTimeSince(startDate);
+                                        var daysLeft = getDaysRemaining(endDate);
+                                        var sinceText = humaniseSince(timeGone['days'])
+                                        var percentComplete = getPercentage(startDate, endDate);
+                        
+                                        document.getElementById('bar').style.width = percentComplete.toString() + '%';
+                                        var countdown = document.getElementById('countdown');
+                                        countdown.innerHTML = daysLeft.toString() + ' days left';
+                                      </script>
+
+                            </div>
+                            <div class="date-text-box">
+                                <h3 class="date-textl">May 2 2019</h3>
+                                <h3 class="date-textr">July 6 2019</h3>
+                                <h2 id="daysleft"></h2>
+                                <h4 class="dayslefttext1">days</h4>
+                                <h4 class="dayslefttext2">left</h4>
+                            </div>
+                        </div>
+
+            </div>
+            <div class="widgets" id="my-cards"></div>
+            <div class="widgets" id="chat-box">
+                <div class="shoutbox_main">
+                    <h3 class="chatbox-text">Chatbox</h3>
+                    <form class="login_form" method="post" action="index.php">
+                        <div>Username: <input type="text" name="username" /></div>
+                        <div>Password: <input type="password" name="password" /></div>
+                        <div><input type="submit" value="Login" name="Login" /></div>
+                    </form>
+                    <form class="s_form" method="post" action="index.php">
+                    <div><input class="write-something" type="text" name="s_message" value="Write something..." /><input type="submit" value="Say" name="s_say" /></div>
+                    </form>
+            </div>
+
+            </div>
+            <div class="widgets" id="vote-box">
+            
+            <!--Hans' Vote Box-->
+                
+            
+            <!--Thumbs-->
+                    
+                <div class="vote" id="voteHeader" ><h3>Vote Box</h3></div>
+                <div class="vote" id="voteText" ><p>På tide å kjøpe en litago?</p></div>
+                
+                    
+                    <button type="button" 
+                      class="thumbdown btn btn-primary btn-lg fa fa-thumbs-down fa-3x like" >
+                    </button>
+                   
+                    <button type="button" 
+                    class="thumbup btn btn-primary btn-lg fa fa-thumbs-up fa-3x like">
+                    </button>      
+                   
+                
+            </div>
+                
+            <!--End Hans'Vote Box-->
+                
+            <div class="widgets" id="members-box">
+            
+                            <h1 class="members">Members</h1>
+                
+                            <ul>
+                
+                            <li>      
+                            <div class="image-container">      
+                            <img src="pictures/round-grey.svg" class="roundgrey">
+                            <h3 class=namesmembers>  Hans</h3>
+                            <h2 class=roundletter>H</h2>
+                            <div class="icons-members">
+                            <img src="pictures/mail-icon.svg" class="mailicon">
+                            <img src="pictures/phone-icon.svg" class="phoneicon">
+                            <img src="pictures/dots-icon.svg" class="dotsicon">
+                            </div>
+                            </div>
+                            </li>
+                            
+                            
+                            
+                            <li>
+                            <div class="image-container">
+                            <img src="pictures/round-grey.svg" class="roundgrey">
+                            <h3 class=namesmembers>Sina</h3>
+                            <h2 class=roundletter>S</h2>
+                            <div class="icons-members">
+                            <img src="pictures/mail-icon.svg" class="mailicon">
+                            <img src="pictures/phone-icon.svg" class="phoneicon">
+                            <img src="pictures/dots-icon.svg" class="dotsicon">
+                            </div>
+                            </div></li>
+                            
+                
+                            
+                            <li>
+                            <div class="image-container">
+                            <img src="pictures/round-grey.svg" class="roundgrey">
+                            <h3 class=namesmembers>Mats</h3>
+                            <h2 class=roundletter>M</h2>
+                            <div class="icons-members">
+                            <img src="pictures/mail-icon.svg" class="mailicon">
+                            <img src="pictures/phone-icon.svg" class="phoneicon">
+                            <img src="pictures/dots-icon.svg" class="dotsicon">
+                            </div>
+                            </div>
+                            </li>
+                            
+                
+                            
+                            <li>
+                            <div class="image-container">
+                            <img src="pictures/round-grey.svg" class="roundgrey">
+                            <h3 class=namesmembers>Edgar</h3>
+                            <h2 class=roundletter>E</h2>
+                            <div class="icons-members">
+                            <img src="pictures/mail-icon.svg" class="mailicon">
+                            <img src="pictures/phone-icon.svg" class="phoneicon">
+                            <img src="pictures/dots-icon.svg" class="dotsicon">
+                            </div>
+                            </div>
+                            </li>
+                
+                              </ul> 
+            </div>
+                
+            <!--Sina's button-->
+                <a id="backButton" target="_self" href="side2.html">
+                    <img id="arrow" src="/photos/pil.png">
+                </a>
+                <div id="proceedBox">
+                    <p id="proceedText">Proceed to WorkBoard</p>
+                </div>
+                    
+                    <!--End Sina's button-->
+                    
+                    <!--End Overview Board-->
+                    
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,233 @@
+body *{
+    font-family: 'verdana', sans-serif;
+    margin:0px;
+    color: #808080;
+}
+
+body {
+    background: #C8BFBF;
+    height: 100%;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+main{
+    position: absolute;
+    width: 100%; 
+    height: 900px;
+    background-color: rgb(27,32,53);
+}
+
+
+/* Overhead */
+
+#welcome{
+    position: absolute;
+    color: rgb(255,252,252);
+    font-size: 70px;
+    left: 100px;
+    top:40px;
+}
+
+#welcome-text{
+    position: absolute;
+    color: rgb(255,252,252);
+    font-size: 30px;
+    left: 100px;
+    top: 130px;
+}
+
+.dateBack{
+    position: absolute;
+    margin-left: 1.2%;
+    background-color: rgb(255,252,252);
+    border-radius: 10%; 
+    font-size: 30px; 
+    text-align: center;
+}
+
+#numberBack{
+    top: 130px;
+    left: 230px;
+    width: 66px;
+    height: 40px;
+}
+
+#monthBack{
+    top: 130px;
+    left: 380px;
+    width: 86px;
+    height: 40px;
+}
+
+/* End Overhead*/
+
+/* Overview Board */
+
+#overview-board{
+    position: absolute; 
+    width: 1365px;
+    height: 586px; 
+    background-color: #1A1C22;
+    bottom: 100px;
+    left: 37.5px;
+    border-radius: 1%;
+    top: 220px;
+}
+
+.widgets{
+    position:absolute; 
+    background-color: #1F2128;
+    border-radius: 1%; 
+}
+
+#progress-bar{
+    width: 614px;
+    height: 274px;
+    bottom: 301px;
+    left: 13px;
+}
+
+#my-cards{
+    width: 614px;
+    height: 274px;
+    bottom: 13px;
+    left: 13px;
+}
+
+#chat-box{
+    width: 345px;
+    height: 367px;
+    top: 13px;
+    left: 640px;   
+}
+
+#vote-box{
+    width: 345px;
+    height: 180px;
+    bottom: 13px;
+    left: 640px; 
+    z-index: 2;
+}
+
+#members-box{
+    width: 350px;
+    height: 367px;
+    top: 13px;
+    left: 1000px; 
+}
+
+/* Hans' Vote Box */
+
+.vote { 
+    position:absolute;
+    margin-left: 20px;
+    color: rgb(255,252,252);
+}
+
+#voteHeader {
+    position:absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: rgb(255,252,252);
+    letter-spacing: 1.5px;
+}
+
+#voteText{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 55px;
+    letter-spacing: 1px;
+}
+
+.thumbdown {
+    left: 25%;
+    top: 60%;
+    position: relative;
+}
+
+.thumbup{
+    left: 50%;
+    top: 60%;
+    position:absolute;
+    color: rgb(255,252,252);
+}
+
+ .rating {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    margin-top: 40px;
+    left:20px;
+    background-color: rgb(20,60,100);
+    width: 300px;
+    margin: auto;
+    border-radius: 1.8%;
+  }  
+  .like, .dislike {
+    color: rgb(200,200,200);
+    display: inline-block;
+    cursor: pointer;
+    margin: 1px;
+  padding: 1px;
+    
+  }
+  
+  .dislike:hover,
+  .like:hover {
+    color: #2EBDD1;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+  }
+  
+
+/* Hans' Vote Box */
+
+
+
+/*Sina's button*/
+
+#backButton{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #999797;
+    right: 3%;
+    bottom: 10%;
+    opacity: 0.8;
+}
+
+#arrow{
+    position: absolute;
+    height: 40%;
+    top: 29%;
+    left: 17%;
+    opacity: 0.8;
+}
+
+#proceedBox{
+    position: absolute;
+    height: 25%;
+    width: 11%;
+    bottom: 5%;
+    right: 12%;
+}
+
+#proceedText{
+    position: absolute;
+    letter-spacing: 1.5px;
+    color: #FFFCFC;
+    font-weight: 400;
+    font-size: 30px;
+    bottom: 1%
+}
+/* End Sina's button */
+
+/* End Overview Board */
+
+
+
+
+
+

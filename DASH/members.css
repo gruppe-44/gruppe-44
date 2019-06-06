@@ -1,0 +1,230 @@
+  
+  .members-box{
+    left: 1022px;
+    right: 5px;
+    bottom: 207px;
+    top: 22px;
+    box-sizing: border-box;
+    position: relative;
+    height: 357px;
+    width: 322px;
+    border-radius: 10px;
+    background-color: #1F2128;
+    border: 1px solid #1C1C1C;
+    overflow: hidden;
+
+  }
+
+  .members{
+    left: 15px;
+    right: 152px;
+    position:relative;
+    height: 41px;
+    width:155.12px;
+    color: #C8BFBF;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1.88px;
+    line-height:41px;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 10px;
+  }
+
+  .roundgrey {
+    height:50px;
+    width:54px;
+    position:relative;
+    top:19px;
+  }
+  
+  .namesmembers {
+    width: 55px;
+    color: #C8BFBF;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    line-height: 20px;
+    text-align:right;
+    top:25px;
+    display:inline-block;
+    position: relative;
+  }
+
+  .roundletter {
+   font-size:30px;
+   font-weight:500;
+   letter-spacing: 1.88px;
+   line-height: 45px;
+   text-align:center;
+   display:inline;
+   position:absolute;
+   left:15px;
+   top: 20px;
+   color:#C8BFBF;
+   padding-left: 14px;
+  }
+
+  .image-container {
+  position: relative;
+  padding-left: 14px;
+  padding-bottom: 20px;
+  top:35px;
+}
+
+ul {
+  padding: 10px;
+  position:relative;
+  bottom: 55px;
+  list-style-type: none;
+}
+
+.mailicon {
+  height: 26px;
+  width: 35px;
+  position: relative;
+  top:15px;
+}
+
+.phoneicon {
+  height: 26px;
+  position: relative;
+  top:15px;
+  width: 27px;
+}
+
+.dotsicon {
+  height: 26px;
+  width: 30px;
+  position: relative;
+  top:15px;
+}
+
+.icons-members{
+  position:relative;
+  display:inline;
+  left:65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projectdue-text{
+  width: 562px;
+  color: #C8BFBF;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1.88px;
+  line-height: 41px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+.progress-bar {
+	overflow: hidden;
+  width: 90%;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+.bar {
+  background-image: linear-gradient(green, red);
+}
+
+.progresss {
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: .75rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: .25rem;
+}
+
+.date-textl {
+  height: 27px;
+  width: 97px;
+  color: #C8BFBF;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.25px;
+  line-height: 27px;
+  text-align: center;
+  float:left;
+}
+
+.date-textr {
+  height: 27px;
+  width: 97px;
+  color: #C8BFBF;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.25px;
+  line-height: 27px;
+  text-align: center;
+  float:right;
+}
+
+#daysleft {
+  color: #C8BFBF;
+  font-size: 80px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  line-height: 109px;
+  position: relative;
+  left: 90px;
+}
+
+.dayslefttext1{
+  color: #C8BFBF;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1.88px;
+  text-align: center;
+  position:relative;
+  bottom: 100px;
+  left: 40px;
+}
+
+.dayslefttext2 {
+  color: #C8BFBF;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1.88px;
+  text-align: center;
+  position:relative;
+  bottom: 100px;
+  left: 40px;
+}
+
+.date-text-box {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
