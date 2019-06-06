@@ -112,51 +112,42 @@ main{
 
 /* Hans' Vote Box */
 
-.vote{ 
-    position:absolute;
-    margin-left: 20px;
-    color: rgb(255,252,252);
-    font-family: Avenir Next; !important;
+.lol {
+    color: white;
 }
 
-#voteHeader {
-    position:absolute;
-    margin-top: 20px;
-    color: rgb(255,252,252);
-    font-family: Avenir Next; !important;
-    letter-spacing: 1.5px;
-}
-
-#voteText{
-    margin-top: 55px;
-    letter-spacing: 1px;
-}
-
-.thumb{
-    position:absolute;
-    color: rgb(255,252,252);
+ .rating {
+    display: inline-block;
+    width: 100%;
+    margin-top: 40px;
+    padding: 25px;
+    text-align: center;
+    background-color: rgb(20,60,100);
+    width: 300px;
+    padding: 50px;
+    margin: auto;
+    border-radius: 1.8%;
+  }  
+  .like, .dislike {
+    color: rgb(200,200,200);
+    display: inline-block;
     cursor: pointer;
-    bottom: 15px;
-    right: 20px;
-    font-size:27px;
+    margin: 1px;
+  padding: 1px;
+    
   }
-
-#thumbsDown{
-    margin-right: 10px;
-}
   
-#thumbsDown:hover, #thumbsUp:hover{
-    color: rgb(100,100,100);
+  .dislike:hover,
+  .like:hover {
+    color: #2EBDD1;
     transition: all .2s ease-in-out;
     transform: scale(1.1);
-}
+  }
+  
+  .active {
+    color:;
+  }
 
-.vote{
-    position: absolute;
-    left: 0;
-    font-size: 20px;
-    color: aliceblue;
-}
 /* Hans' Vote Box */
 
 

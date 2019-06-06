@@ -5,7 +5,12 @@
     <link rel="Stylesheet" type="text/css" href="Dash.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="Dash.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+         <script src="JavaScript.js"></script>
+         <script src="Dash.js"></script>   
     <title>Dashboard</title>
     </head>
     <body>
@@ -32,22 +37,22 @@
             
             <!--Hans' Vote Box-->
                 
-                <script src="jquery-3.4.1.min.js"></script>
-                
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
             
             <!--Thumbs down-->
                     
                 <div class="vote" id="voteHeader" ><h3>Vote Box</h3></div>
                 <div class="vote" id="voteText" ><p>På tide å kjøpe en litago?</p></div>
                 
-                    <div class="thumb">
-                       <i id="thumbsDown"  class="fa fa-thumbs-down fa-3x like" onclick=votedDown()></i>
-                        <i id="thumbsUp" class="fa fa-thumbs-up fa-3x like" onclick=votedUp()></i>
-                    </div>
-                <div class="vote" id="votedDown"></div>
-                <div class="vote" id="votedUp"></div>
+                    
+                    <button type="button" 
+                      class="thumbup btn btn-primary btn-lg fa fa-thumbs-down fa-3x like" >
+                    </button>
+                   
+                   
+                    <button type="button" 
+                    class="thumbup btn btn-primary btn-lg fa fa-thumbs-up fa-3x like">
+                    </button>      
+                   
                 
             </div>
                 

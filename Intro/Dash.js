@@ -1,4 +1,5 @@
 
+ $(document).ready(function() {
 window.onload = function dateMonth() {
 
     var dateMonth = new Date(); 
@@ -17,31 +18,19 @@ window.onload = function dateMonth() {
 
  /* Hans' Vote Box*/
 
-var votedDown = document.getElementById("votedDown");
-var votedUp = document.getElementById("votedUp");
+ /* $(document).ready(function() {
 
-var downVote = document.getElementById("thumbsDown");
-var upVote = document.getElementById("thumbsUp");
-
-var countDown = 0;
-var countUp = 0;
-
-votedDown.onclick = function() {
-    if (countDown < 5) { 
-        countDown += 1;
-        votedDown.innerHTML = "downvotes: " + countDown;
-   } else {
-        votedDown.innerHTML = "downvotes: 5";
-    }
-}
-
-votedUp.onclick = function() {
-  if (countUp < 5) { 
-        countUp += 1;
-        votedUp.innerHTML = "<br>" + "upvotes: " + countUp;
-    } else {
-        votedUp.innerHTML = "<br>" + "upvotes: 5";
-    }
-}
-
+    $('.thumb').on('click', function() {
+        var cnt=0;
+        var btn = $(this);
+        btn.button('loading');
+        setTimeout(function () {
+            cnt++;
+            btn.button('reset');
+            btn.text('  ' + cnt);
+        }, 1000);
+    });
+    });
+ */
  /* End Hans' Vote Box*/
+});
