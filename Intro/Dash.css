@@ -18,7 +18,7 @@ main{
     color: rgb(255,252,252);
     font-size: 70px;
     left: 100px;
-    top:0px;
+    top:40px;
 }
 
 #welcome-text{
@@ -27,7 +27,7 @@ main{
     color: rgb(255,252,252);
     font-size: 30px;
     left: 100px;
-    top: 13%;
+    top: 130px;
 }
 
 .dateBack{
@@ -40,14 +40,14 @@ main{
 }
 
 #numberBack{
-    top: 145px;
+    top: 130px;
     left: 200px;
     width: 66px;
     height: 40px;
 }
 
 #monthBack{
-    top: 145px;
+    top: 130px;
     left: 310px;
     width: 86px;
     height: 40px;
@@ -100,6 +100,7 @@ main{
     height: 180px;
     bottom: 13px;
     left: 640px; 
+    z-index: 2;
 }
 
 #members-box{
@@ -108,6 +109,57 @@ main{
     top: 13px;
     left: 1000px; 
 }
+
+/* Hans' Vote Box */
+
+.vote{ 
+    position:absolute;
+    margin-left: 20px;
+    color: rgb(255,252,252);
+    font-family: Avenir Next; !important;
+}
+
+#voteHeader {
+    position:absolute;
+    margin-top: 20px;
+    color: rgb(255,252,252);
+    font-family: Avenir Next; !important;
+    letter-spacing: 1.5px;
+}
+
+#voteText{
+    margin-top: 55px;
+    letter-spacing: 1px;
+}
+
+.thumb{
+    position:absolute;
+    color: rgb(255,252,252);
+    cursor: pointer;
+    bottom: 15px;
+    right: 20px;
+    font-size:27px;
+  }
+
+#thumbsDown{
+    margin-right: 10px;
+}
+  
+#thumbsDown:hover, #thumbsUp:hover{
+    color: rgb(100,100,100);
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.vote{
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    color: aliceblue;
+}
+/* Hans' Vote Box */
+
+
 
 /*Sina's button*/
 
