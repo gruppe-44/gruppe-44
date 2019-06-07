@@ -2,7 +2,7 @@
 
 <?php 
 	if(logged_in()) {
-		redirect("Dash.html");
+		redirect("side2.html");
 	}
  ?>
 	<div>
