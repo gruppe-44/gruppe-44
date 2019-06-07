@@ -225,33 +225,22 @@ main{
 /* End Sina's button */
 
 /* Priority start */
-#prioConteiner{
+.text{
     position: absolute;
-    height: 20%;
-    width: 35%;
-    background-color: darkgrey;
-    border: 6px solid black;
-    border-radius: 10%;
+    color: #C8BFBF;
+    font-size: 25px;
+    font-weight: 400;
+    top: 7%;
     margin: 0;
     padding: 0;
 }
 
-
-
-.text{
-    position: absolute;
-    color: #FFFCFC;
-    font-size: 23px;
-    font-weight: 400;
-    top: 3%;
-}
-
 #text1{
-    left: 3%;
+    left: 6%;
 }
 
 #text2{
-    right: 15%;
+    right: 16%;
 }
 
 
@@ -259,14 +248,17 @@ main{
     position: relative;
     width: 10%;
     border-radius: 9%;
-    top: 25%;
-    left: 2%;
+    top: 22%;
+    left: 3%;
+    padding: 0;
+    margin: 4%;
 }
 
               
 .prioNumber{
     text-align: center;
     font-family: 'Nunito Sans', sans-serif;
+    font-size: 17px;
     color: #FFFCFC;
     font-weight: 300;
 }
@@ -283,40 +275,58 @@ main{
     background-color: #2d9319;
 }
 
-#prioTextConteiner{
+.prioTextConteiner{
     position: absolute;
-    top: 25%;
-    left: 15%;
+    left: 19%;
+    font-size: 18px;
+    margin: 0.6%;
 }
 
 .prioText{
     font-family: 'Nunito Sans', sans-serif;
-    color: #FFFCFC;
+    color: #C8BFBF;
     font-weight: 400;
+    padding: 0;
+    margin: 0;
 }
 
-#prioDateConteiner{
+#prioText1{
+    top: 29%;
+}
+
+#prioText2{
+    top: 48%;
+}
+
+#prioText3{
+    top: 66%;
+}
+
+.prioDateConteiner{
     position: absolute;
-    top: 25%;
-    left: 75%;
+    left: 70%;
 }
 
 #prioDate1{
-    border: 1px solid #fcf8d4;
-    border-radius: 9%;
+    border: 1px solid #ff0000;
+    border-radius: 8%;
+    top: 29%;
 }
 
 #prioDate2{
-    border: 1px solid #fcf8d4;
+    border: 1px solid #C8BFBF;
     border-radius: 9%;
+    top: 47%;
 }
 
 #prioDate3{
-    border: 1px solid #fcf8d4;
+    border: 1px solid #C8BFBF;
     border-radius: 9%;
+    top: 66%;
 }
+/* Priority end */
 
-  
+
 .members-box{
     left: 1022px;
     right: 5px;
