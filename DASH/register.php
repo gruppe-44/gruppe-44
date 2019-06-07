@@ -1,7 +1,7 @@
 <?php include("includes/header.php") ?>
 
-	<div class="row">
-		<div class="col-lg-6 col-lg-offset-3">
+	<div>
+		<div>
 			
 			<?php validate_user_registration(); ?>
 								
@@ -17,12 +17,8 @@
 
 
 <div class="limiter">
-    <div class="container-login100">
-
-
-        
-        <div class="wrap-login100">
-
+    <div class="container-login">   
+        <div class="wrap-login">
 
             <div class="flat-form">
 		<form id="register-form" method="post" role="form" >
@@ -79,15 +75,12 @@
                         </li>
                         <div class="button_right">
                         <li>
-							<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+							<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control-btn" value="Register Now">
 						</li>
                         </div>
                     </ul>
                 </form>
-            </div>
-            <!--/#login.form-action-->
-
-            
+            </div>            
         </div>
 
         <div class="wrap-picturefront" style="background-image: url('pictures/bg-01.jpg');">

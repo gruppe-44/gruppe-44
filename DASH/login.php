@@ -1,42 +1,22 @@
 <?php include("includes/header.php") ?>
 
 <?php 
-
 	if(logged_in()) {
-
 		redirect("Dash.html");
-
 	}
-
-
  ?>
-	
-
-	<div class="row">
-		<div class="col-lg-6 col-lg-offset-3">
-			
+	<div>
+		<div>			
 			<?php display_message(); ?>
 
-			<?php validate_user_login(); ?>
-		
-								
+			<?php validate_user_login(); ?>								
 		</div>
 	</div>
 
 	<?php include("includes/footer.php") ?>
-
-
-
-
-
-
-
 	 <div class="limiter">
-    <div class="container-login100">
-
-
-        
-        <div class="wrap-login100">
+        <div class="container-login">
+            <div class="wrap-login">
 
 
             <div class="flat-form">
@@ -69,15 +49,12 @@
                         </li>
                         <div class="button_right">
                         <li>
-							<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+							<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control-btn" value="Log In">
 						</li>
                         </div>
                     </ul>
                 </form>
-            </div>
-            <!--/#login.form-action-->
-
-            
+            </div>           
         </div>
 
         <div class="wrap-picturefront" style="background-image: url('pictures/bg-01.jpg');">

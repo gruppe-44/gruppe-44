@@ -10,29 +10,30 @@ else
 // initialization of login system and generation code
 $oSimpleLoginSystem = new SimpleLoginSystem();
 
-// draw login box
+/*Tegner opp loginbox*/
 echo $oSimpleLoginSystem->getLoginBox();
 
-// draw shoutbox application
+/*Tegner opp chatten */
 echo $oSimpleLoginSystem->getShoutbox();
 
-// class SimpleLoginSystem
+/*Klassen til simpleloginsystem*/
 class SimpleLoginSystem {
 
-    // variables
-    var $aExistedMembers; // Existed members array
+    /*Variabler av brukere*/
+    var $aExistedMembers; 
 
-    // constructor
+    /*Konstruktør */
     function SimpleLoginSystem() {
         $this->aExistedMembers = array(
-            'Mats' => 'd8578edf8458ce06fbc5bb76a58c5ca4',  //Sample: MD5('qwerty')
-            'Hans' => 'd8578edf8458ce06fbc5bb76a58c5ca4'
+            'Mats' => 'd8578edf8458ce06fbc5bb76a58c5ca4',
+            'Hans' => 'd8578edf8458ce06fbc5bb76a58c5ca4',
+            'Sina' => 'd8578edf8458ce06fbc5bb76a58c5ca4',
+            'Edgar' => 'd8578edf8458ce06fbc5bb76a58c5ca4'
         );
     }
 
     function getLoginBox() {
         ob_start();
-        require_once('login_form.html');
         $sLoginForm = ob_get_clean();
 
         $sLogoutForm = '<a href="'.$_SERVER['PHP_SELF'].'?logout=1">logout</a>';
