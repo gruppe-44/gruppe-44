@@ -1,0 +1,696 @@
+body *{
+    font-family: 'verdana', sans-serif;
+    margin:0px;
+    color: #808080;
+}
+
+body {
+    background: #C8BFBF;
+    height: 100%;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+main{
+    position: absolute;
+    width: 100%; 
+    height: 900px;
+    background-color: rgb(27,32,53);
+}
+
+
+/* Overhead */
+
+#welcome{
+    position: absolute;
+    color: rgb(255,252,252);
+    font-size: 70px;
+    left: 100px;
+    top:40px;
+}
+
+#welcome-text{
+    position: absolute;
+    color: rgb(255,252,252);
+    font-size: 30px;
+    left: 100px;
+    top: 130px;
+}
+
+.dateBack{
+    position: absolute;
+    margin-left: 1.2%;
+    background-color: rgb(255,252,252);
+    border-radius: 10%; 
+    font-size: 30px; 
+    text-align: center;
+}
+
+#numberBack{
+    top: 130px;
+    left: 230px;
+    width: 66px;
+    height: 40px;
+}
+
+#monthBack{
+    top: 130px;
+    left: 380px;
+    width: 86px;
+    height: 40px;
+}
+
+/* End Overhead*/
+
+/* Overview Board */
+
+#overview-board{
+    position: absolute; 
+    width: 1365px;
+    height: 586px; 
+    background-color: #1A1C22;
+    bottom: 100px;
+    left: 37.5px;
+    border-radius: 1%;
+    top: 220px;
+}
+
+.widgets{
+    position:absolute; 
+    background-color: #1F2128;
+    border-radius: 1%; 
+}
+
+#progress-bar{
+    width: 614px;
+    height: 274px;
+    bottom: 301px;
+    left: 13px;
+}
+
+#my-cards{
+    width: 614px;
+    height: 274px;
+    bottom: 13px;
+    left: 13px;
+}
+
+#chat-box{
+    width: 345px;
+    height: 367px;
+    top: 13px;
+    left: 640px;   
+}
+
+#vote-box{
+    width: 345px;
+    height: 180px;
+    bottom: 13px;
+    left: 640px; 
+    z-index: 2;
+}
+
+#members-box{
+    width: 350px;
+    height: 367px;
+    top: 13px;
+    left: 1000px; 
+}
+
+/* Hans' Vote Box */
+
+.vote { 
+    position:absolute;
+    margin-left: 20px;
+    color: rgb(255,252,252);
+}
+
+#voteHeader {
+    position:absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: rgb(255,252,252);
+    letter-spacing: 1.5px;
+}
+
+#voteText{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 55px;
+    letter-spacing: 1px;
+}
+
+.thumbdown {
+    left: 25%;
+    top: 60%;
+    position: relative;
+}
+
+.thumbup{
+    left: 50%;
+    top: 60%;
+    position:absolute;
+    color: rgb(255,252,252);
+}
+
+ .rating {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    margin-top: 40px;
+    left:20px;
+    background-color: rgb(20,60,100);
+    width: 300px;
+    margin: auto;
+    border-radius: 1.8%;
+  }  
+  .like, .dislike {
+    color: rgb(200,200,200);
+    display: inline-block;
+    cursor: pointer;
+    margin: 1px;
+  padding: 1px;
+    
+  }
+  
+  .dislike:hover,
+  .like:hover {
+    color: #2EBDD1;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+  }
+  
+
+/* Hans' Vote Box */
+
+
+
+/*Sina's button*/
+
+#backButton{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #999797;
+    right: 3%;
+    bottom: 10%;
+    opacity: 0.8;
+}
+
+#arrow{
+    position: absolute;
+    height: 40%;
+    top: 29%;
+    left: 17%;
+    opacity: 0.8;
+}
+
+#proceedBox{
+    position: absolute;
+    height: 25%;
+    width: 11%;
+    bottom: 5%;
+    right: 12%;
+}
+
+#proceedText{
+    position: absolute;
+    letter-spacing: 1.5px;
+    color: #FFFCFC;
+    font-weight: 400;
+    font-size: 30px;
+    bottom: 1%
+}
+/* End Sina's button */
+
+/* Priority start */
+.text{
+    position: absolute;
+    color: #C8BFBF;
+    font-size: 25px;
+    font-weight: 400;
+    top: 7%;
+    margin: 0;
+    padding: 0;
+}
+
+#text1{
+    left: 6%;
+}
+
+#text2{
+    right: 16%;
+}
+
+
+.prioBox{
+    position: relative;
+    width: 10%;
+    border-radius: 9%;
+    top: 22%;
+    left: 3%;
+    padding: 0;
+    margin: 4%;
+}
+
+              
+.prioNumber{
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 17px;
+    color: #FFFCFC;
+    font-weight: 300;
+}
+
+#prioBox1{
+    background-color: #f44159;
+}
+
+#prioBox2{
+    background-color: #f49141;
+}
+
+#prioBox3{
+    background-color: #2d9319;
+}
+
+.prioTextConteiner{
+    position: absolute;
+    left: 19%;
+    font-size: 18px;
+    margin: 0.6%;
+}
+
+.prioText{
+    font-family: 'Nunito Sans', sans-serif;
+    color: #C8BFBF;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+#prioText1{
+    top: 29%;
+}
+
+#prioText2{
+    top: 48%;
+}
+
+#prioText3{
+    top: 66%;
+}
+
+.prioDateConteiner{
+    position: absolute;
+    left: 70%;
+}
+
+#prioDate1{
+    border: 1px solid #ff0000;
+    border-radius: 8%;
+    top: 29%;
+}
+
+#prioDate2{
+    border: 1px solid #C8BFBF;
+    border-radius: 9%;
+    top: 47%;
+}
+
+#prioDate3{
+    border: 1px solid #C8BFBF;
+    border-radius: 9%;
+    top: 66%;
+}
+/* Priority end */
+
+
+.members-box{
+    left: 1022px;
+    right: 5px;
+    bottom: 207px;
+    top: 22px;
+    box-sizing: border-box;
+    position: relative;
+    height: 357px;
+    width: 322px;
+    border-radius: 10px;
+    background-color: #1F2128;
+    border: 1px solid #1C1C1C;
+    overflow: hidden;
+
+  }
+
+  .members{
+    left: 15px;
+    right: 152px;
+    position:relative;
+    height: 41px;
+    width:155.12px;
+    color: #C8BFBF;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1.88px;
+    line-height:41px;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 10px;
+  }
+
+  .roundgrey {
+    height:50px;
+    width:54px;
+    position:relative;
+    top:19px;
+  }
+  
+  .namesmembers {
+    width: 55px;
+    color: #C8BFBF;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    line-height: 20px;
+    text-align:right;
+    top:25px;
+    display:inline-block;
+    position: relative;
+  }
+
+  .roundletter {
+   font-size:30px;
+   font-weight:500;
+   letter-spacing: 1.88px;
+   line-height: 45px;
+   text-align:center;
+   display:inline;
+   position:absolute;
+   left:15px;
+   top: 20px;
+   color:#C8BFBF;
+   padding-left: 14px;
+  }
+
+  .image-container {
+  position: relative;
+  padding-left: 14px;
+  padding-bottom: 20px;
+  top:35px;
+}
+
+ul {
+  padding: 10px;
+  position:relative;
+  bottom: 55px;
+  list-style-type: none;
+}
+
+.mailicon {
+  height: 26px;
+  width: 35px;
+  position: relative;
+  top:15px;
+}
+
+.phoneicon {
+  height: 26px;
+  position: relative;
+  top:15px;
+  width: 27px;
+}
+
+.dotsicon {
+  height: 26px;
+  width: 30px;
+  position: relative;
+  top:15px;
+}
+
+.icons-members{
+  position:relative;
+  display:inline;
+  left:65px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projectdue-text{
+  width: 562px;
+  color: #C8BFBF;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1.88px;
+  line-height: 41px;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+
+.progress-bar {
+	overflow: hidden;
+  width: 90%;
+  position:relative;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+.bar {
+  background-image: linear-gradient(green, red);
+}
+
+.progresss {
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: .75rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: .25rem;
+}
+
+.date-textl {
+  height: 27px;
+  width: 97px;
+  color: #C8BFBF;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.25px;
+  line-height: 27px;
+  text-align: center;
+  float:left;
+}
+
+.date-textr {
+  height: 27px;
+  width: 97px;
+  color: #C8BFBF;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.25px;
+  line-height: 27px;
+  text-align: center;
+  float:right;
+}
+
+#daysleft {
+  color: #C8BFBF;
+  font-size: 80px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  line-height: 109px;
+  position: relative;
+  left: 90px;
+}
+
+.dayslefttext1{
+  color: #C8BFBF;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1.88px;
+  text-align: center;
+  position:relative;
+  bottom: 100px;
+  left: 40px;
+}
+
+.dayslefttext2 {
+  color: #C8BFBF;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1.88px;
+  text-align: center;
+  position:relative;
+  bottom: 100px;
+  left: 40px;
+}
+
+.date-text-box {
+  position: relative;
+  width: 100%;
+  height: 50%;
+}
+
+
+.shoutbox_main {
+    width:300px;
+    height: 400px;
+    padding:10px;
+    background-color: #1F2128;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.message {
+    border: 1px solid #AAA;
+    background-color: #1F2128;
+    border-radius: 10px;
+    position: relative;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: 700px;    
+    top: 270px;
+}
+
+.message span {
+    color: #C8BFBF;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.88px;
+    line-height: 19px;
+    text-align: center;
+    bottom: 75px;
+    float: right;
+    position: relative;
+}
+
+.s_form {
+    position: absolute;
+    margin: 0px;
+    padding: 10px 0;
+    background-color: #1F2128;
+    border-radius: 10px;
+    background-color: #807D7D;
+    color: #3E3B3B;
+    bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.chatbox{
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #1F2128;
+    border: 1px solid #1C1C1C;
+    position: absolute;
+  }
+
+.chatbox-text{
+    color: #C8BFBF;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1.88px;
+    line-height: 0px;
+    text-align: center;
+}
+
+.write-something{
+
+    border-radius: 10px;
+    background-color: #807D7D;
+    color: #3E3B3B;
+}
+
+input { 
+    border-style: none; 
+    background: transparent; 
+    outline: none;
+    text-decoration: none; 
+    color: #ffffff;
+    text-decoration-color: #808080;
+}
+
+a{ 
+    text-decoration: none !important;
+    color: #808080 !important;
+    text-decoration-color: #808080 !important;
+    padding: 0 10px;
+}
+
+.login_form {
+    position: relative;
+    top: 200px;
+    display: inline;
+    text-align: center;
+    font-size: 15px;
+}
+
+.login_form input{
+    border: 1px solid #AAA;
+}
+
+.login_form input[type=submit]{
+    left: 135px;
+    bottom: 50px;
+    position: relative;
+}
+
+.user-name{
+    font-size: 20px
+}
+
+.text-of-message{
+    padding: 0 10px;
+    overflow: scroll;
+}
+
+.messagetextbox{
+    padding: 0 5px;
+    white-space: normal;
+
+}
+
+.chatarrow{
+    height: 44px;
+    width: 32px;
+    float: right;
+}
+
+
+/* Priority end */
+
+/* End Overview Board */
+
+
+
+
+
+

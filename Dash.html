@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+
+    <!-- Basic website needs-->
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+
+    <!-- Stylesheets -->
+    <link rel="Stylesheet" type="text/css" href="CSS/Dash.css">
+    <link rel="Stylesheet" type="text/css" href="CSS/members.css">
+    <link rel="Stylesheet" type="text/css" href="CSS/shoutbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
+    <script src="Scripts/JavaScript.js"></script>
+    <script src="Scripts/Dash.js"></script>
+    <script src="Scripts/progress-bar.js"></script>
+
+</head>
+
+<body>
+    <main>
+        
+        <!--Overhead-->
+        
+        <h2 id="welcome">Welcome</h2>
+        <p id="welcome-text">It's the<span style="opacity:0;">_..__ </span>of
+        <span style="opacity:0;"> _____</span>, this is your daily schedule.</p>
+        <div class="dateBack" id="numberBack"></div>
+        <div class="dateBack" id="monthBack"></div>
+        
+        
+        <!--End Overhead-->
+        
+        <!--Overview Board-->
+        
+        <div id="overview-board">
+            <div class="widgets" id="progress-bar">
+                <div class="due-field">
+                    <h1 class="projectdue-text">Project "Eksamen PRO103" is due in</h1>
+                    <div class="progresss-bar">
+                        <div class="progresss" style="width:90%; margin-left:auto; margin-right:auto;">
+                            <div id="bar" style="border-right: ; background-image: linear-gradient(to right, green , red); height: 20px; width: 0%"></div>
+                        </div>
+                        <div id="countdown"></div>  
+                    </div>
+                    <div class="date-text-box">
+                        <h3 class="date-textl">May 2 2019</h3>
+                        <h3 class="date-textr">July 6 2019</h3>
+                        <h2 id="daysleft"></h2>
+                        <h4 class="dayslefttext1">days</h4>
+                        <h4 class="dayslefttext2">left</h4>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="widgets" id="my-cards">
+
+                <h1 class="text" id="text1">My KanBan Cards</h1>
+                <h1 class="text" id="text2">Due</h1>
+            
+                <div class="prioBox" id="prioBox1">
+                    <p class="prioNumber">Pri 1</p>
+                </div>
+            
+                <div class="prioBox" id="prioBox2">
+                    <p class="prioNumber">Pri 2</p>
+                </div>
+            
+                <div class="prioBox" id="prioBox3">
+                    <p class="prioNumber">Pri 3</p>
+                </div>
+                
+                
+                
+                <div class="prioTextConteiner" id="prioText1">
+                    <p class="prioText">Make a prototype</p>
+                </div>
+            
+                <div class="prioTextConteiner" id="prioText2">
+                    <p class="prioText">Start writing document</p>
+                </div>
+            
+                <div class="prioTextConteiner" id="prioText3">
+                    <p class="prioText">Finish design</p>
+                </div>
+                
+                
+                
+                <div class="prioDateConteiner" id="prioDate1">
+                    <p class="prioText">24/05  09:00</p>
+                </div>
+            
+                <div class="prioDateConteiner" id="prioDate2">
+                    <p class="prioText">03/06  10:00</p>
+                </div>
+            
+                <div class="prioDateConteiner" id="prioDate3">
+                    <p class="prioText">07/06  10:00</p>
+                </div>
+                
+            </div>
+
+
+
+
+
+
+            <div class="widgets" id="chat-box">
+                <div class="shoutbox_main">
+                    <h3 class="chatbox-text">Chatbox</h3>
+                    <form class="login_form" method="post" action="index.php">
+                        <div>Username: <input type="text" name="username" /></div>
+                        <div>Password: <input type="password" name="password" /></div>
+                        <div><input type="submit" value="Login" name="Login" /></div>
+                    </form>
+                    <form class="s_form" method="post" action="index.php">
+                    <div><input class="write-something" type="text" name="s_message" value="Write something..." /><input type="submit" value="SUBMIT" name="s_say" /></div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="widgets" id="vote-box">
+            
+            <!--Hans' Vote Box-->
+
+            
+            <!--Thumbs-->
+
+                <div class="vote" id="voteHeader" ><h3>Vote Box</h3></div>
+                <div class="vote" id="voteText" ><p>På tide å kjøpe en litago?</p></div>
+
+
+                    <button type="button" 
+                      class="thumbdown btn btn-primary btn-lg fa fa-thumbs-down fa-3x like" >
+                    </button>
+                
+                    <button type="button" 
+                    class="thumbup btn btn-primary btn-lg fa fa-thumbs-up fa-3x like">
+                    </button>      
+                
+                
+            </div>
+
+            <!--End Hans'Vote Box-->
+
+            <div class="widgets" id="members-box">
+                <h1 class="members">Members</h1>
+                <ul>
+                    <li>      
+                        <div class="image-container">      
+                            <img src="pictures/round-grey.svg" class="roundgrey">
+                            <h3 class=namesmembers>  Hans</h3>
+                            <h2 class=roundletter>H</h2>
+                            <div class="icons-members">
+                                <a href="mailto:name@email.com"><img src="pictures/mail-icon.svg" class="mailicon"></a>
+                                <a href="tel:+47-number"><img src="pictures/phone-icon.svg" class="phoneicon"></a>
+                                <img src="pictures/dots-icon.svg" class="dotsicon">
+                            </div>
+                        </div>
+                    </li>
+
+
+
+                    <li>
+                        <div class="image-container">
+                            <img src="pictures/round-grey.svg" class="roundgrey">
+                            <h3 class=namesmembers>Sina</h3>
+                            <h2 class=roundletter>S</h2>
+                            <div class="icons-members">
+                                <a href="mailto:name@email.com"><img src="pictures/mail-icon.svg" class="mailicon"></a>
+                                <a href="tel:+47-number"><img src="pictures/phone-icon.svg" class="phoneicon"></a>
+                                <img src="pictures/dots-icon.svg" class="dotsicon">
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="image-container">
+                            <img src="pictures/round-grey.svg" class="roundgrey">
+                            <h3 class=namesmembers>Mats</h3>
+                            <h2 class=roundletter>M</h2>
+                            <div class="icons-members">
+                                <a href="mailto:name@email.com"><img src="pictures/mail-icon.svg" class="mailicon"></a>
+                                <a href="tel:+47-number"><img src="pictures/phone-icon.svg" class="phoneicon"></a>
+                                <img src="pictures/dots-icon.svg" class="dotsicon">
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="image-container">
+                            <img src="pictures/round-grey.svg" class="roundgrey">
+                            <h3 class=namesmembers>Edgar</h3>
+                            <h2 class=roundletter>E</h2>
+                            <div class="icons-members">
+                                <a href="mailto:name@email.com"><img src="pictures/mail-icon.svg" class="mailicon"></a>
+                                <a href="tel:+47-number"><img src="pictures/phone-icon.svg" class="phoneicon"></a>
+                                <img src="pictures/dots-icon.svg" class="dotsicon">
+                            </div>
+                        </div>
+                    </li>
+                  </ul> 
+            </div>
+
+            <!--Sina's button-->
+            <a id="backButton" target="_self" href="side2.html">
+                <img id="arrow" src="Pictures/pil.png">
+            </a>
+            <div id="proceedBox">
+                <p id="proceedText">Proceed to WorkBoard</p>
+            </div>
+            <!--End Sina's button-->
+
+        <!--End Overview Board-->
+        </div>
+    </main>
+    <script src="Scripts/progress-bar.js"></script>
+</body>
+</html>

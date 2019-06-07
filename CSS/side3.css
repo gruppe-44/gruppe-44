@@ -1,0 +1,37 @@
+html, body{
+    height: 100%;
+    width: 100%;
+	margin: 0;
+    position: absolute;
+    background-color: #1B2035;
+}
+
+#text{
+    position: relative;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #FFFCFC;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 300;
+    top: 35%;
+}
+
+#backButton{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #999797;
+    left: 4%;
+    top: 5%;
+    opacity: 0.8;
+}
+
+#arrow{
+    position: absolute;
+    transform: rotate(180deg);
+    height: 40%;
+    top: 29%;
+    left: 17%;
+    opacity: 0.8;
+}

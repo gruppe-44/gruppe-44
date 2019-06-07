@@ -1,0 +1,67 @@
+body {
+    margin:0px;
+    font-family: 'verdana', sans-serif;
+    overflow: hidden; 
+}
+
+main{
+    position: relative; 
+    width: 100%; 
+    height: 900px; 
+    background-color: rgb(27,32,53);
+} 
+
+#hello{
+    position: absolute;
+    color: rgb(255,252,252);
+    font-size: 50px; 
+    top: 35%;
+    left: -30%;
+    animation: welcometxt 4s forwards, txtfade 5s forwards;
+}
+
+@keyframes welcometxt{
+0% {left: -30%}
+25% {left: -30%}
+50% {left: 43%}
+75% {left: 43%}
+100% {left: 43%}
+}
+
+@keyframes txtfade {
+    0% {opacity: 1}
+    40% {opacity: 1}
+    65% {opacity: 0}
+    100% {opacity: 0}
+}
+
+#ball{
+    display:flex;
+    justify-content: center;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(6,21,121);
+    left: 40%;
+    top: 100%;
+    animation:ballmove 5s ease-in, growth 3s forwards;
+}   
+
+@keyframes ballmove {
+    0% {top: 100%}
+    15% {top: 25%}
+    50% {top: 25%}
+    80% {top: 25%}
+    100% { top: 100%}
+}
+
+@keyframes growth {
+    0% {transform: scale( 1 );}
+     
+     50% {transform: scale( 1 );}
+
+     75% {transform: scale( 1 );}
+     
+     100% {transform: scale( 0.3 );}
+   }
