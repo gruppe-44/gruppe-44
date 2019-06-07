@@ -1,11 +1,5 @@
 <?php
 
-// set error reporting level
-if (version_compare(phpversion(), "5.3.0", ">=") == 1)
-  error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED);
-else
-  error_reporting(E_ALL & ~E_NOTICE);
-
 
 // initialization of login system and generation code
 $oSimpleLoginSystem = new SimpleLoginSystem();
@@ -86,7 +80,7 @@ class SimpleLoginSystem {
     // shoutbox functions addon
     function getShoutbox() {
         //the host, name, and password for your mysql
-        $con = mysqli_connect("localhost","root","","chatnew");
+        $con = mysqli_connect("localhost","root","","login-db");
 
         //select the database
         //mysql_select_db("chatnew");
