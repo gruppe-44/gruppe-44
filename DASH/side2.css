@@ -6,19 +6,18 @@ html, body{
     background-color: #1B2035;
 }
 
-#mainConteiner{
-    height: 100%;
-    width: 100%;
+#topConteiner{
+    top: 0;
+    padding: 0;
     margin: 0;
-    position: relative;
-    overflow: hidden;
 }
 
 #overskrift{
     position: relative;
     font-family: 'Nunito Sans', sans-serif;
     color: #FFFCFC;
-    left: 28%;
+    left: 25%;
+    /*text-align: center; */
     font-size: 70px;
     font-weight: 300;
     padding: 3%;
@@ -27,11 +26,19 @@ html, body{
 
 #pin{
     position: absolute;
-    height: 8%;
+    height: 10%;
     top: 5%;
-    left: 63%;
+    left: 66.5%;
 }
 
+#mainConteiner{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
 
 .picContainer{
     position: absolute;
@@ -41,9 +48,8 @@ html, body{
 .picContainer:hover{
     width: 28%;
     margin-left: -1%;
-    top: 32%;
+    top: 1%;
 }
-
 
 .picContainer img{
     width: 100%;
@@ -82,18 +88,18 @@ html, body{
 }
 
 #cleaning{
-    top: 37%;
+    top: 38%;
     left: 8%;
 }
 
 #budget{
-    top: 37%;
+    top: 38%;
     left: 37%;
 }
 
 #newCard{
     position: absolute;
-    top: 37%;
+    top: 38%;
     left: 66%;
     background-color: #999797;
     width: 25%;
@@ -114,3 +120,4 @@ html, body{
     height: 32%;
     width: 28%;
 }
+
