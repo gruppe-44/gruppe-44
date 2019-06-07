@@ -7,7 +7,7 @@ else
   error_reporting(E_ALL & ~E_NOTICE);
 
 
-// initialization of login system and generation code
+// initialiserer loginsystemet
 $oSimpleLoginSystem = new SimpleLoginSystem();
 
 /*Tegner opp loginbox*/
@@ -84,15 +84,12 @@ class SimpleLoginSystem {
         return ($this->aExistedMembers[$sName] == $sPass);
     }
 
-    // shoutbox functions addon
+    /*Shoutbox funksjon*/
     function getShoutbox() {
-        //the host, name, and password for your mysql
+        /*Kobler til mysql med host, brukernavn, passord og Databasenavn */
         $con = mysqli_connect("localhost","root","","chatnew");
 
-        //select the database
-        //mysql_select_db("chatnew");
-
-        // adding to DB table posted message
+        /*Legger til i Database*/
         if ($_COOKIE['member_name']) {
             if(isset($_POST['s_say']) && $_POST['s_message']) {
                 $sUsername = $_COOKIE['member_name'];
@@ -101,17 +98,18 @@ class SimpleLoginSystem {
             }
         }
 
-        //returning the last 5 messages
+        /*leser ut de 2 siste meldingene*/
         $vRes = mysqli_query($con,"SELECT * FROM `s_messages` ORDER BY `id` DESC LIMIT 2");
 
         $sMessages = '';
 
-        // collecting list of messages
+        /*Skriver ut meldingen i chatboxen */
         while($aMessages = mysqli_fetch_array($vRes)) {
             $sWhen = date(" d/m/y – H:i", $aMessages['when']);
             $sMessages .= '<div class="message">'.'<a class="user-name">'. $aMessages['user'] . ': '.'</a>' .'<div class="messagetextbox"><a class="text-of-message"><br>'.$aMessages['message'].'</a></div>' . '<span>' . $sWhen . '</span></div>';
         }
 
+        /*Lukker database connection*/
         mysqli_close($con);
 
         ob_start();
